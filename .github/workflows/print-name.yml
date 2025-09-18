@@ -1,0 +1,7 @@
+name: Print Repo Name
+on: workflow_dispatch
+lobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo zorza-workflow-java
