@@ -4,12 +4,12 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-1@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-2@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-3@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-4@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-5@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-6@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-7@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-8@main
-      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-9@main
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-1@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-2@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-3@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-4@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-5@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-6@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-7@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-8@v1
+      - uses: zorza-org/zorza-shared-actions/.github/actions/zorza-action-9@v1
