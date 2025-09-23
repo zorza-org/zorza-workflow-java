@@ -1,11 +1,18 @@
 name: Print Repo Name
 on: workflow_dispatch
+
 jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - uses: zorza-org/zorza-shared-actions/zorza-action-1@v2.1
-      - uses: zorza-org/zorza-shared-actions/zorza-action-2@v2.2
+      - name: "Step 1"
+        id: step1
+        uses: zorza-org/zorza-shared-actions/zorza-action-1@v2.1
+
+      - name: "Step 2"
+        if: failure()  # ✅ runs only if any previous step failed
+        uses: zorza-org/zorza-shared-actions/zorza-action-2@v2.2
+
       - uses: zorza-org/zorza-shared-actions/zorza-action-3@v2.3
       - uses: zorza-org/zorza-shared-actions/zorza-action-4@v2.4
       - uses: zorza-org/zorza-shared-actions/zorza-action-5@v2.5
