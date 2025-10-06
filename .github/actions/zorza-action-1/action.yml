@@ -9,4 +9,4 @@ runs:
       shell: bash
     - name: Print Repo Name
       id: zorza-action-
-      uses: ./.github/actions/zorza-action-2
+      uses: ./.reusable/.github/actions//zorza-action-2
