@@ -13,6 +13,7 @@ jobs:
           repository: zorza-org/zorza-workflow-java
           ref: main
           path: .actions
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: use du to show files
         run:
           du -ah .
