@@ -7,12 +7,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - name: Checkout reusable workflow repo
+        uses: actions/checkout@v5
+        with:
+          repository: zorza-org/zorza-workflow-java
+          ref: main
+          path: .actions
       - name: use du to show files
         run:
           du -ah .
       - name: "Step 1"
         id: step1
-        uses: ./.github/actions/zorza-action-1
+        uses: .actions/zorza-action-1
 
       # - name: "Step 2"
       #   if: failure()  # ✅ runs only if any previous step failed
