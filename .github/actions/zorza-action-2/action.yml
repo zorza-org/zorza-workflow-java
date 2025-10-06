@@ -1,0 +1,9 @@
+name: Print Repo Name
+runs:
+  using: "composite"
+  steps:
+    - name: Print Repo Name
+      id: zorza-action-2
+      run: |
+        echo zorza-action-2
+      shell: bash

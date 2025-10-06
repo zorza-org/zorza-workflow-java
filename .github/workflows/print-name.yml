@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: "Step 1"
         id: step1
-        uses: zorza-org/zorza-shared-actions/zorza-action-1@main
+        uses: .github/actions/zorza-action-1
 
       # - name: "Step 2"
       #   if: failure()  # ✅ runs only if any previous step failed
