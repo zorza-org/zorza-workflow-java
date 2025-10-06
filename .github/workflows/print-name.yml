@@ -12,14 +12,14 @@ jobs:
         with:
           repository: zorza-org/zorza-workflow-java
           ref: main
-          path: .actions
+          path: .github/actions
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: use du to show files
         run:
           du -ah .
-      # - name: "Step 1"
-      #   id: step1
-      #   uses: ./.actions/zorza-action-1
+      - name: "Step 1"
+        id: step1
+        uses: ./.github/actions/zorza-action-1
 
       # - name: "Step 2"
       #   if: failure()  # ✅ runs only if any previous step failed
