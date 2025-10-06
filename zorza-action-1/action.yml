@@ -5,9 +5,6 @@ runs:
     - name: checkout
       id: checkout
       uses: actions/checkout@v5
-    - name: print files in $GITHUB_ACTION_PATH with du
-      run: du -ah $GITHUB_ACTION_PATH/..
-      shell: bash
     - name: Print Repo Name
       id: zorza-action-1
       run: |

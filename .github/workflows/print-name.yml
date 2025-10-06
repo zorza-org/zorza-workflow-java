@@ -1,5 +1,5 @@
 name: Print Repo Name
-on: workflow_dispatch
+on: workflow_call
 
 jobs:
   print:
